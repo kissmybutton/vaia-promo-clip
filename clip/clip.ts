@@ -119,10 +119,10 @@ clip.addIncident(comboOut("#text6"), 25000);
 
 clip.addIncident(opacity("#text7", 0, 1, 600), 25500);
 clip.addIncident(top(".images-list", "100px", 200), 25350);
-clip.addIncident(scaleCombo(".scale-container-0 ", "250px"), 25800);
-clip.addIncident(scaleCombo(".scale-container-1 ", "25px"), 25800 + 1200);
-clip.addIncident(scaleCombo(".scale-container-2 ", "-200px"), 25800 + 2400);
-clip.addIncident(scaleCombo(".scale-container-3 ", "-425px"), 25800 + 3600);
+clip.addIncident(scaleCombo("#scale-container-0 ", "250px"), 25800);
+clip.addIncident(scaleCombo("#scale-container-1 ", "25px"), 25800 + 1200);
+clip.addIncident(scaleCombo("#scale-container-2 ", "-200px"), 25800 + 2400);
+clip.addIncident(scaleCombo("#scale-container-3 ", "-425px"), 25800 + 3600);
 clip.addIncident(top(".images-list", "-1080px", 200), 30550);
 
 clip.addIncident(comboOut("#text7"), 30000);

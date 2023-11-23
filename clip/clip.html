@@ -19,7 +19,7 @@
 
   <div class="options">
   <div
-    class="card op op-{{ key }}"
+    class="card op"
     mc-for="key,option"
     mc-of="initParams.options"
   >
@@ -116,8 +116,8 @@
 </div>
 
 <div class="images-list">
-  <div class="card1 image-{{i}} {{ initParams.animationClass }}" mc-for="i,image" mc-of="initParams.images">
-    <div class="scale-container scale-container-{{i}}">
+  <div class="card1" mc-for="i,image" mc-of="initParams.images">
+    <div class="scale-container" id="scale-container-{{i}}">
       <div class="foreground1">
         <img src="{{ image.image }}" />
       </div>
