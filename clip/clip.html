@@ -1,6 +1,12 @@
 <div class="container">
+  <div class="bg"></div>
+    <div class="abstract-cont cont1"></div>
+  <div class="abstract-cont cont2"></div>
+  <div class="abstract-cont cont3"></div>
+  <div class="abstract-cont cont4"></div>
   <div
-    class="{{ 'text text' + key }}"
+    class="text"
+    id="text{{key}}"
     mc-for="key,scene"
     mc-of="initParams.scenes"
   >
@@ -8,6 +14,7 @@
       >{{letter}}</span
     >
   </div>
+
 
 
   <div class="options">
@@ -108,9 +115,9 @@
   </div>
 </div>
 
-<div class="images-list1">
+<div class="images-list">
   <div class="card1 image-{{i}} {{ initParams.animationClass }}" mc-for="i,image" mc-of="initParams.images">
-    <div class="scale-container1 scale-container1-{{i}}">
+    <div class="scale-container scale-container-{{i}}">
       <div class="foreground1">
         <img src="{{ image.image }}" />
       </div>

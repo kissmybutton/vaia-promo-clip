@@ -1,9 +1,6 @@
 * {
-
-  /*
-    This is an example of how to use MotorCortex's init params in css, using a css variable
-      if you are unfamiliar with css variables here is a quick guide https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#basic_usage
-  */
+  font-family: "Roboto", sans-serif;
+  color: #fff;
 }
 
 .container {
@@ -31,11 +28,47 @@
   animation: BackgroundGradientAnimation 16s ease infinite;
 }
 
+.bg{
+  width: 1080px;
+  height:1080px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.abstract-cont{
+  width:300px;
+  height:300px;
+  opacity: 0.7;
+}
+
+.cont1{
+  position: absolute;
+  top: 20%;
+  left: 60%;
+}
+.cont2{
+  position: absolute;
+  top: 70%;
+  left: 10%;
+}
+.cont3{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.cont4{
+  position: absolute;
+  top: 80%;
+  left: 70%;
+}
+
 .text{
   position: absolute;
   width: 80%;
   text-align: center;
-
   height: 100px;
   line-height: 55px;
 }
@@ -43,6 +76,7 @@
 
 .text-letter {
   position: relative;
+  opacity: 0;
 }
 
 
@@ -63,20 +97,21 @@
   }
 }
 
-.text3,.text7{
+#text3,#text7{
   top: 70%;
 }
 
-.text7{
+#text3  .text-letter,#text7 .text-letter{
+  opacity: 1;
+}
+
+#text7{
   width:50%;
   left: 16%;
 }
 
 /*options*/
-* {
-  font-family: "Roboto", sans-serif;
-  color: #fff;
-}
+
 
 @keyframes bobbing {
   0%,
@@ -218,11 +253,11 @@ svg {
   z-index: 1;
 }
 
-.scale-container1 {
+.scale-container {
   position: relative;
 }
 
-.images-list1 {
+.images-list {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -237,7 +272,7 @@ svg {
  
 }
 
-.images-list1 img {
+.images-list img {
   object-fit: cover;
   border-radius: 5%;
   aspect-ratio: 235/170;

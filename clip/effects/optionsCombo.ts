@@ -34,6 +34,6 @@ export const optionsCombo = (selector) =>
     },
     {
       selector,
-      delay: "@expression(index*1600)",
+      delay: "@expression(index*1000)",
     }
   );

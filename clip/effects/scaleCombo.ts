@@ -1,6 +1,6 @@
 import { CSSEffect, Combo } from "@donkeyclip/motorcortex";
 
-export const scaleCombo = (selector) =>
+export const scaleCombo = (selector, top) =>
   new Combo(
     {
       incidents: [
@@ -12,7 +12,7 @@ export const scaleCombo = (selector) =>
                 scale: 2.8,
               },
               left: "-200%",
-              // top: `calc(300 + (index + 1) * -150)px`,
+              top,
             },
           },
           props: {
@@ -40,6 +40,5 @@ export const scaleCombo = (selector) =>
     },
     {
       selector,
-      delay: "@expression(index*1200)",
     }
   );
