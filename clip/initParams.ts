@@ -17,29 +17,29 @@ export default [
       options: [
         {
           name: "Teacher",
-          image: "./assets/teacher.jpg",
+          image: "https://elisavetampatzidou.github.io/kmb-question-progress/server/assets/teacher.jpg",
         },
         {
           name: "Salesperson",
-          image: "./assets/salesperson.jpg",
+          image: "https://elisavetampatzidou.github.io/kmb-question-progress/server/assets/salesperson.jpg",
         },
         {
           name: "Tourist Guide",
-          image: "./assets/tourist-guide.jpg",
+          image: "https://elisavetampatzidou.github.io/kmb-question-progress/server/assets/tourist-guide.jpg",
         },
       ],
       images: [
         {
-          image: "./assets/website.jpg",
+          image: "https://elisavetampatzidou.github.io/kmb-question-progress/server/assets/website.jpg",
         },
         {
-          image: "./assets/app.jpg",
+          image: "https://elisavetampatzidou.github.io/kmb-question-progress/server/assets/app.jpg",
         },
         {
-          image: "./assets/tv.jpg",
+          image: "https://elisavetampatzidou.github.io/kmb-question-progress/server/assets/tv.jpg",
         },
         {
-          image: "./assets/info-kiosk.png",
+          image: "https://elisavetampatzidou.github.io/kmb-question-progress/server/assets/info-kiosk.png",
         },
       ],
     },
