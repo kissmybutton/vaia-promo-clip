@@ -1,0 +1,275 @@
+* {
+
+  /*
+    This is an example of how to use MotorCortex's init params in css, using a css variable
+      if you are unfamiliar with css variables here is a quick guide https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#basic_usage
+  */
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  font-size: 40px;
+  background: linear-gradient(
+    18deg,
+    #5cabff,
+    #e068ff,
+    #7435fd,
+    #5cabff,
+    #e068ff
+  );
+  background-size: 1000% 1000%;
+  animation: BackgroundGradientAnimation 16s ease infinite;
+}
+
+.text{
+  position: absolute;
+  width: 80%;
+  text-align: center;
+
+  height: 100px;
+  line-height: 55px;
+}
+
+
+.text-letter {
+  position: relative;
+}
+
+
+/* .code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+} */
+
+@keyframes BackgroundGradientAnimation {
+  0% {
+    background-position: 0% 47%;
+  }
+  50% {
+    background-position: 100% 54%;
+  }
+  100% {
+    background-position: 0% 47%;
+  }
+}
+
+.text3,.text7{
+  top: 70%;
+}
+
+.text7{
+  width:50%;
+  left: 16%;
+}
+
+/*options*/
+* {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+@keyframes bobbing {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.scale-container {
+  position: relative;
+  width: 100%;
+}
+.foreground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.foreground img {
+  border-radius: 8px;
+  flex: 1;
+  flex-grow: 2;
+  height: auto;
+  width: calc(100% - 18%);
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  margin-left: 10%;
+  margin-bottom: 7%;
+}
+
+.foreground h1 {
+  padding-left: 10%;
+  font-size: 35px;
+  margin-bottom: 3%;
+}
+.options {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  flex: 3;
+  position: relative;
+  transition: transform 0.5s cubic-bezier(0.2, 1.25, 0.3, 1),
+    flex-grow 0.5s cubic-bezier(0.2, 2.5, 0.3, 1);
+}
+
+.card.op{
+  flex-grow: 7;
+}
+
+.bobbing {
+  animation: bobbing 4s infinite;
+}
+
+.card:hover svg {
+  opacity: 1;
+  transform: rotate(-2deg);
+}
+
+.card:nth-child(1) {
+  animation-delay: 0s;
+}
+.card:nth-child(2) {
+  animation-delay: -1s;
+}
+.card:nth-child(3) {
+  animation-delay: -2s;
+}
+
+svg {
+  max-width: 100%;
+  transition: transform 0.3s;
+  opacity: 0.7;
+  height: auto;
+  width: 100%;
+}
+
+.subtitles {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+  /* Styles for screens where the width is greater than or equal to the height */
+  .scene {
+    flex-direction: column;
+  }
+  .card .scale-container {
+    height: 100%;
+    width: 100%;
+  }
+  .card {
+    flex-direction: column;
+    aspect-ratio: 147/120;
+    max-width: 100%;
+  }
+  .card svg {
+    height: 100%;
+  }
+  .card:nth-child(1) {
+    top: 0px;
+  }
+  .card:nth-child(2) {
+    top: 0px;
+  }
+  .card:nth-child(3) {
+    top: 0px;
+  }
+  .scene > div:nth-child(4) {
+    top: 0px;
+  }
+}
+
+/*image-list*/
+.foreground1 {
+  position: absolute;
+  z-index: 1;
+}
+
+.scale-container1 {
+  position: relative;
+}
+
+.images-list1 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 250px;
+  position:absolute;
+  right:30px;
+  top: 1080px;
+ 
+}
+
+.images-list1 img {
+  object-fit: cover;
+  border-radius: 5%;
+  aspect-ratio: 235/170;
+  width: 85%;
+  margin-left: 9%;
+  margin-top: 9%;
+}
+.card1 {
+  position: relative;
+  transition: transform 0.5s cubic-bezier(0.2, 1.25, 0.3, 1),
+    flex-grow 0.5s cubic-bezier(0.2, 2.5, 0.3, 1),
+    padding 0.5s cubic-bezier(0.2, 2.5, 0.3, 1);
+}
+
+
+.card1:nth-child(1) {
+  animation-delay: 0s;
+}
+.card1:nth-child(2) {
+  animation-delay: -1s;
+}
+.card1:nth-child(3) {
+  animation-delay: -2s;
+}
+.card1:nth-child(4) {
+  animation-delay: -3s;
+}
+
+li {
+  opacity: 0.5;
+}
+
+li.active {
+  opacity: 1;
+}
