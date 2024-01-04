@@ -9,7 +9,7 @@ export const optionsCombo = (selector) =>
           attrs: {
             animatedAttrs: {
               flexGrow: 10,
-              fontSize: "40px",
+              fontSize: "30px",
             },
           },
           props: {
@@ -22,7 +22,7 @@ export const optionsCombo = (selector) =>
           attrs: {
             animatedAttrs: {
               flexGrow: 7,
-              fontSize: "35px",
+              fontSize: "25px",
             },
           },
           props: {
