@@ -16,29 +16,36 @@ export default [
       options: [
         {
           name: "Educational Assistant",
-          image: "assets/teacher.jpg",
+          image:
+            "https://kissmybutton.github.io/vaia-promo-clip/server/assets/teacher.jpg",
         },
         {
           name: "Sales Assistant",
-          image: "assets/salesperson.jpg",
+          image:
+            "https://kissmybutton.github.io/vaia-promo-clip/server/assets/salesperson.jpg",
         },
         {
           name: "Concierge",
-          image: "assets/con.webp",
+          image:
+            "https://theboutiquechalet.com/wp-content/uploads/2020/02/concierge-1.jpg",
         },
       ],
       images: [
         {
-          image: "assets/website.jpg",
+          image:
+            "https://kissmybutton.github.io/vaia-promo-clip/server/assets/website.jpg",
         },
         {
-          image: "assets/app.png",
+          image:
+            "https://kissmybutton.github.io/vaia-promo-clip/server/assets/app.png",
         },
         {
-          image: "assets/tv.jpg",
+          image:
+            "https://kissmybutton.github.io/vaia-promo-clip/server/assets/tv.jpg",
         },
         {
-          image: "assets/info-kiosk.png",
+          image:
+            "https://kissmybutton.github.io/vaia-promo-clip/server/assets/info-kiosk.PNG",
         },
       ],
     },
